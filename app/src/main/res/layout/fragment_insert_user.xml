@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mareinc.marcospedraza.clienteandroidrest.InsertUserFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:id="@+id/et_nombre_insert_user"
+            android:hint="Nombre del Usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_style_edittext"/>
+
+
+        <Spinner
+            android:id="@+id/spinner_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_nombre_insert_user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:entries="@array/items"
+
+            />
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:id="@+id/et_monto_insert_user"
+            android:hint="Monto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_estado"
+            android:background="@drawable/border_style_edittext"
+            android:inputType="number"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn_insertFrag_probar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textAllCaps="false"
+            android:layout_below="@+id/et_monto_insert_user"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

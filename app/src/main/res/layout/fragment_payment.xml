@@ -1,0 +1,140 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mareinc.marcospedraza.clienteandroidrest.paymentFragment"
+    android:background="#fff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/ly_busqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:gravity="center_horizontal">
+
+
+            <EditText
+                android:id="@+id/et_busqueda_payfragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/border_style_edittext"
+                android:hint="Ingrese la id del usuario"/>
+
+            <ImageButton
+                android:id="@+id/btn_busqueda_payment_frag"
+                android:src="@drawable/ic_search"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="consultar"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ly_datos"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/ly_busqueda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_id_payment_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id: "
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tv_nombre_payment_frag"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre: "
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tv_estado_payment_frag"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado: "
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tv_saldo_payment_frag"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saldo: "
+                android:textSize="20sp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/separator"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/ly_datos"
+            android:background="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_cobro"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator"
+            android:textSize="21sp"
+            android:text="Realizar Cobro"
+            android:textStyle="bold"
+            />
+
+
+        <LinearLayout
+            android:layout_below="@+id/tv_cobro"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/et_monto_payment_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese el monto a cobrar"
+                android:background="@drawable/border_style_edittext"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/btn_cobro_payment_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cobrar"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
